@@ -18,22 +18,15 @@
         }
 
         .shadow_1 {
-            animation-name: bio_entry_animation_up;
+            animation-name: bio_entry_animation_right;
             animation-duration: 3s;
             animation-iteration-count: 1;
             animation-timing-function: ease;
         }
 
         .shadow_2 {
-            animation-name: bio_entry_animation_right;
-            animation-duration: 4s;
-            animation-iteration-count: 1;
-            animation-timing-function: ease;
-        }
-
-        .shadow_3 {
             animation-name: bio_entry_animation_left;
-            animation-duration: 4s;
+            animation-duration: 3s;
             animation-iteration-count: 1;
             animation-timing-function: ease;
         }
@@ -63,17 +56,6 @@
                 position: relative;
                 left: 0%;
 
-            }
-        }
-
-        @keyframes bio_entry_animation_up {
-
-            from {
-                height: 80vh;
-            }
-
-            to {
-                height: 0vh;
             }
         }
 
@@ -127,15 +109,18 @@
             width: 30px;
             margin: 0px 4px;
         }
+
+        .socials a img:hover {
+            width: 40px;
+            margin: 0px 4px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="shadow_1"></div>
-    <h3><strong>MY BIO</strong></h3>
-    <div class="shadow_1"></div>
+    <h3 class="shadow_2"><strong>MY BIO</strong></h3>
     <div class="container">
-        <div class="logo"><a href="https://mishrabiswajit.github.io/"><img width="200px"
+        <div class="logo shadow_1"><a href="https://mishrabiswajit.github.io/"><img width="200px"
                     src="https://telegra.ph/file/7c5413c6984628104ace4.jpg" alt=""></a></div>
         <div class="info shadow_2">
             <p>My name is Biswajit Mishra.</p>
@@ -147,7 +132,7 @@
                     you want</a></p>
             <p></p>
         </div>
-        <div class="socials  shadow_3">
+        <div class="socials  shadow_1">
             <a href="https://github.com/mishrabiswajit" target="_blank"><img
                     src="https://telegra.ph/file/a16e76df6181e6439b981.png" alt="github"></a>
             <a href="https://www.instagram.com/mishrabiswajit660/" target="_blank"><img
