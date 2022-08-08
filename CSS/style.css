@@ -1,0 +1,114 @@
+/* Initialisation of Page */
+body {
+  margin: 0px;
+  background-color: black;
+}
+
+/* Animations Used */
+.shadow_1 {
+  animation-name: bio_entry_animation_right;
+  animation-duration: 2.85s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+.shadow_2 {
+  animation-name: bio_entry_animation_left;
+  animation-duration: 2.85s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+@keyframes bio_entry_animation_left {
+  from {
+    position: relative;
+    right: 100%;
+
+  }
+
+  to {
+    position: relative;
+    right: 0%;
+
+  }
+}
+
+@keyframes bio_entry_animation_right {
+  from {
+    position: relative;
+    left: 100%;
+
+  }
+
+  to {
+    position: relative;
+    left: 0%;
+
+  }
+}
+
+/* Content Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  display: block;
+  text-decoration: underline dotted;
+  text-shadow: 0px 0px 20px aqua;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.info {
+  margin-top: 5px;
+  font-family: 'Roboto Mono', monospace;
+  color: rgb(21, 225, 21);
+  text-align: center;
+  padding: 30px 30px 20px 30px;
+}
+
+a:hover {
+  color: aqua;
+}
+
+.logo {
+  margin-top: 15px;
+  align-self: center;
+  box-shadow: 3px 2px 7px grey;
+}
+
+.logo img {
+  transition: all .2s ease 0s;
+}
+
+.logo img:hover {
+  width: 210px;
+}
+
+div p a {
+  text-decoration: none;
+  color: greenyellow;
+}
+
+.socials {
+  align-self: center;
+  color: aqua;
+  margin: 0px 0px 20px 0px;
+}
+
+.socials a img {
+  width: 32px;
+  margin: 12px 9px 5px 9px;
+  transition: all .5s ease-in-out 0s;
+}
+
+.socials a img:hover {
+  transform: rotate(360deg) scale(1.2);
+}
