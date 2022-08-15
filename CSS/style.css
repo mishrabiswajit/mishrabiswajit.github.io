@@ -58,7 +58,6 @@ body {
 h3 {
   align-items: center;
   text-align: center;
-  color: white;
   padding: 5px;
   display: block;
   text-decoration: underline dotted;
@@ -70,12 +69,11 @@ h3 {
   margin-top: 5px;
   font-family: 'Roboto Mono', monospace;
   color: rgb(21, 225, 21);
-  text-align: center;
   padding: 30px 30px 20px 30px;
 }
 
 a:hover {
-  color: aqua;
+  color: aquamarine;
 }
 
 .logo {
@@ -94,12 +92,11 @@ a:hover {
 
 div p a {
   text-decoration: none;
-  color: greenyellow;
+  color: aqua;
 }
 
 .socials {
   align-self: center;
-  color: aqua;
   margin: 0px 0px 20px 0px;
 }
 
@@ -111,4 +108,17 @@ div p a {
 
 .socials a img:hover {
   transform: rotate(360deg) scale(1.2);
+}
+
+/* Some usefull classes */
+.white {
+  color: white;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+.center {
+  text-align: center;
 }
