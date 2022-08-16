@@ -1,10 +1,10 @@
 // Birthday Function
-let birthday = setTimeout(function () {
+setTimeout(function () {
   var current = new Date();
 
   if (current.getDate() >= 2 && current.getMonth() >= 8) {
     if (current.getDate() == 2 && current.getMonth() == 8) {
-      document.getElementById("birthday").innerHTML = "Today is my Birthday and I am " + (current.getFullYear() - 2003) + " yrs old now.";
+      document.getElementById("birthday").innerText = "Today is my 🎂 Birthday 🎂 and I am " + (current.getFullYear() - 2003) + " yrs old now.";
 
       //Wish Function
       setTimeout(function () {
@@ -31,5 +31,9 @@ let birthday = setTimeout(function () {
 function clock() {
   var current = new Date();
   document.getElementById("clock").innerHTML = current.toLocaleTimeString({ timeZone: 'Asia/Kolkata' });
+
+  // Random Colour Generator
+  const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  document.getElementById("clock").style.color = "#" + randomColor;
 }
 setInterval(clock, 1000);
