@@ -1,5 +1,5 @@
 // Birthday Function
-setTimeout(function () {
+setTimeout(() => {
   var current = new Date();
 
   if (current.getDate() >= 2 && current.getMonth() >= 8) {
@@ -18,25 +18,34 @@ setTimeout(function () {
       }, 5000);
     }
     else {
-      document.getElementById("birthday").innerHTML = "I am " + (current.getFullYear() - 2003) + " yrs old.";
+      document.getElementById("birthday").innerText = "I am " + (current.getFullYear() - 2003) + " yrs old.";
     }
   }
 
   else {
-    document.getElementById("birthday").innerHTML = "I am " + (current.getFullYear() - 2004) + " yrs old.";
+    document.getElementById("birthday").innerText = "I am " + (current.getFullYear() - 2004) + " yrs old.";
   }
 }, 0);
 
 // Clock Function
-function clock() {
+setInterval(() => {
+  // Time Variables
   var local_time = new Date(); // Getting the local time
   var india_time = new Date(local_time.toLocaleString("en-US", { timeZone: "Asia/Kolkata" })); // Getting the indian time
-
-  // AM/PM Converter
   var hours = india_time.getHours();
   var minutes = india_time.getMinutes();
   var seconds = india_time.getSeconds();
   var AM_PM = "AM";
+
+  // Greet Function
+  if (3 <= hours < 12) {
+    document.getElementById("greet").innerText = " Good Morning !!\n\n";
+  }
+  if (12 <= hours <= 16) {
+    document.getElementById("greet").innerText = " Good Afternoon !!\n\n";
+  }
+
+  // AM/PM Converter
   if (hours >= 12) {
     AM_PM = "PM";
     hours -= 12;
@@ -56,5 +65,4 @@ function clock() {
   // Random Colour Generator
   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
   document.getElementById("clock").style.color = "#" + randomColor;
-}
-setInterval(clock, 1000);
+}, 1000);
