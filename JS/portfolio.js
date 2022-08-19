@@ -38,17 +38,22 @@ setInterval(() => {
   var AM_PM = "AM";
 
   // Greet Function
-  if (3 <= hours < 12) {
+  if (3 <= hours && hours < 12 && AM_PM == "AM") {
     document.getElementById("greet").innerText = " Good Morning !!\n\n";
-  }
-  if (12 <= hours <= 16) {
-    document.getElementById("greet").innerText = " Good Afternoon !!\n\n";
   }
 
   // AM/PM Converter
   if (hours >= 12) {
     AM_PM = "PM";
     hours -= 12;
+
+    //Greet Function
+    if (0 <= hours && hours < 3 && AM_PM == "PM") {
+      document.getElementById("greet").innerText = " Good Afternoon !!\n\n";
+    }
+    else if (4 <= hours && hours <= 7 && AM_PM == "PM") {
+      document.getElementById("greet").innerText = " Good Evening !!\n\n";
+    }
   }
 
   // Zero inserter
