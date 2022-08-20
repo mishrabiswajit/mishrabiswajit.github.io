@@ -66,8 +66,4 @@ setInterval(() => {
 
   // Final String
   document.getElementById("clock").innerText = `${hours}:${minutes}:${seconds} ${AM_PM}`;
-
-  // Random Colour Generator
-  const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-  document.getElementById("clock").style.color = "#" + randomColor;
 }, 1000);

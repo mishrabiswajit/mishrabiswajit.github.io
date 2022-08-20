@@ -1,7 +1,15 @@
-/* Initialisation of Page */
-body {
-  margin: 0px;
+/* Initializing the page */
+* {
   background-color: black;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+body {
+  margin: 20px 13px 20px 13px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Animations Used */
@@ -47,78 +55,86 @@ body {
   }
 }
 
-/* Content Styling */
-.container {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  height: auto;
-}
-
-h3 {
-  align-items: center;
-  text-align: center;
-  padding: 5px;
-  display: block;
-  text-decoration: underline dotted;
-  text-shadow: 0px 0px 20px aqua;
-  font-family: 'Roboto Mono', monospace;
-}
-
-.info {
-  margin-top: 5px;
-  font-family: 'Roboto Mono', monospace;
-  color: rgb(21, 225, 21);
-  padding: 30px 30px 20px 30px;
-}
-
-a:hover {
-  color: aquamarine;
-}
-
+/* Content Styling  */
 .logo {
-  margin-top: 15px;
-  align-self: center;
-  box-shadow: 3px 2px 7px grey;
+  padding: 35px 0px 25px 0px;
 }
 
 .logo img {
+  border-radius: 3px 23px;
+  box-shadow: 3px 2px 7px grey;
   transition: all .2s ease 0s;
 }
 
 .logo img:hover {
-  width: 210px;
+  border-radius: 23px 3px;
+  transform: scale(1.03);
 }
 
-div p a {
-  text-decoration: none;
-  color: aqua;
+.info {
+  font-size: 1.05rem;
+  font-family: 'Manrope', sans-serif;
+}
+
+.info p {
+  margin: 10px 0px 10px 0px;
+  padding: 5px;
 }
 
 .socials {
-  align-self: center;
-  margin: 0px 0px 20px 0px;
+  margin-top: 10px;
 }
 
 .socials a img {
   width: 32px;
   margin: 12px 9px 5px 9px;
   transition: all .5s ease-in-out 0s;
+  border-radius: 45%;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 2.5px 2.5px 10px grey;
 }
 
 .socials a img:hover {
   transform: rotate(360deg) scale(1.2);
 }
 
-/* Some usefull classes */
-.white {
-  color: white;
+/* Usefull Classes */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.monospace {
-  font-family: monospace;
+.primary-heading {
+  font-family: 'Satoshi', sans-serif;
+  font-size: x-large;
+  font-size: 1.35rem;
+}
+
+.secondary-heading {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 300;
+  padding: 10px 0px 10px 0px;
+}
+
+.underline {
+  text-decoration: underline dotted;
 }
 
 .center {
   text-align: center;
+}
+
+.red {
+  /* color: #00c9f7; */
+  color: #c80c2f;
+}
+
+.blue {
+  color: #00c9f7;
+}
+
+.cream {
+  color: #f8edcc;
 }
