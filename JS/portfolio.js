@@ -46,7 +46,6 @@ setInterval(() => {
   if (hours >= 12) {
     AM_PM = "PM";
     hours -= 12;
-
     //Greet Function
     if (0 <= hours && hours < 3 && AM_PM == "PM") {
       document.getElementById("greet").innerText = " Good Afternoon !!\n\n";
@@ -57,6 +56,12 @@ setInterval(() => {
   }
 
   // Zero inserter
+  if (hours < 10) {
+    hours = "0" + hours;
+    if (hours == 0) {
+      hours = 12;
+    }
+  }
   if (minutes < 10) {
     minutes = "0" + minutes;
   }
