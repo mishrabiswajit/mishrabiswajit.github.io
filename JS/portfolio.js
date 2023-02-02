@@ -15,7 +15,7 @@ setTimeout(() => {
         else {
           alert("You made me cry 😭😭");
         }
-      }, 5000);
+      }, 16000);
     }
     else {
       document.getElementById("birthday").innerText = "I am " + (current.getFullYear() - 2003) + " yrs old.";
@@ -39,7 +39,7 @@ setInterval(() => {
 
   // Greet Function
   if (3 <= hours && hours < 12 && AM_PM == "AM") {
-    document.getElementById("greet").innerText = " Good Morning !!\n\n";
+    document.getElementById("greet").innerText = ", Good Morning !!\n";
   }
 
   // AM/PM Converter
@@ -47,11 +47,11 @@ setInterval(() => {
     AM_PM = "PM";
     hours -= 12;
     //Greet Function
-    if (0 <= hours && hours < 3 && AM_PM == "PM") {
-      document.getElementById("greet").innerText = " Good Afternoon !!\n\n";
+    if (0 <= hours && hours <= 3 && AM_PM == "PM") {
+      document.getElementById("greet").innerText = ", Good Afternoon !!\n";
     }
     else if (4 <= hours && hours <= 7 && AM_PM == "PM") {
-      document.getElementById("greet").innerText = " Good Evening !!\n\n";
+      document.getElementById("greet").innerText = ", Good Evening !!\n";
     }
   }
 

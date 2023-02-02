@@ -13,45 +13,102 @@ body {
 }
 
 /* Animations Used */
-.shadow_1 {
-  animation-name: bio_entry_animation_right;
-  animation-duration: 2.85s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
+.entry_1 {
+  opacity: 0;
+  animation: entry_animation_left_to_right 1.85s .7s ease forwards;
 }
 
-.shadow_2 {
-  animation-name: bio_entry_animation_left;
-  animation-duration: 2.85s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
+.entry_2 {
+  opacity: 0;
+  animation: entry_animation_left_to_right 1.85s 2s ease forwards;
 }
 
-@keyframes bio_entry_animation_left {
-  from {
-    position: relative;
-    right: 100%;
+.entry_3 {
+  opacity: 0;
+  animation: entry_animation_left_to_right 1.85s 3.5s ease forwards;
+}
 
+.entry_4 {
+  opacity: 0;
+  animation: entry_animation_left_to_right 1.85s 5s ease forwards;
+}
+
+.entry_5 {
+  opacity: 0;
+  animation: entry_animation_left_to_right 1.85s 6.5s ease forwards;
+}
+
+.entry_6 {
+  opacity: 0;
+  animation: entry_animation_left_to_right 1.85s 7.5s ease forwards;
+}
+
+.entry_7 {
+  opacity: 0;
+  animation: entry_animation_left_to_right 1.85s 9s ease forwards;
+}
+
+.entry_8 {
+  opacity: 0;
+  animation: entry_animation_left_to_right 1.85s 10.5s ease forwards;
+}
+
+.entry_9 {
+  opacity: 0;
+  animation: entry_animation_left_to_right_logo .5s 11.7s ease-in forwards;
+}
+
+.entry_10 {
+  opacity: 0;
+  animation: entry_animation_left_to_right_logo .5s 12s ease-in forwards;
+}
+
+.entry_11 {
+  opacity: 0;
+  animation: entry_animation_left_to_right_logo .5s 12.5s ease-in forwards;
+}
+
+.entry_12 {
+  opacity: 0;
+  animation: entry_animation_left_to_right_logo .5s 13s ease-in forwards;
+}
+
+.entry_13 {
+  opacity: 0;
+  animation: entry_animation_left_to_right_logo .5s 13.5s ease-in forwards;
+}
+
+.entry_14 {
+  opacity: 0;
+  animation: entry_animation_left_to_right_logo .5s 14s ease-in forwards;
+}
+
+.entry_15 {
+  opacity: 0;
+  animation: entry_animation_left_to_right_logo .5s 14.5s ease-in forwards;
+}
+
+@keyframes entry_animation_left_to_right {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
   }
 
-  to {
-    position: relative;
-    right: 0%;
-
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
   }
 }
 
-@keyframes bio_entry_animation_right {
-  from {
-    position: relative;
-    left: 100%;
-
+@keyframes entry_animation_left_to_right_logo {
+  0% {
+    opacity: 0;
+    transform: scale(-40%) translateX(-50%);
   }
 
-  to {
-    position: relative;
-    left: 0%;
-
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
   }
 }
 
@@ -88,13 +145,13 @@ body {
 .socials a img {
   width: 35px;
   margin: 12px 9px 5px 9px;
-  transition: all .5s ease-in-out 0s;
+  transition: all .3s ease 0s;
   border-radius: 45%;
   box-shadow: 2.5px 2.5px 10px grey;
 }
 
 .socials a img:hover {
-  transform: rotate(360deg) scale(1.2);
+  transform: scale(1.2);
 }
 
 /* Usefull Classes */
