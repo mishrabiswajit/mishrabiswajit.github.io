@@ -1,6 +1,6 @@
 /* Initializing the page */
 * {
-  background-color: black;
+  background-color: #f8edcc;
   margin: 0px;
   padding: 0px;
   text-decoration: none;
@@ -130,7 +130,7 @@ body {
 
 .info {
   font-size: 1.05rem;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Satoshi', sans-serif;
 }
 
 .info p {
@@ -182,15 +182,10 @@ body {
   text-align: center;
 }
 
-.red {
-  /* color: #00c9f7; */
-  color: #c80c2f;
-}
-
-.blue {
-  color: #00c9f7;
+.grey {
+  color: rgb(109, 107, 107);
 }
 
 .cream {
-  color: #f8edcc;
+  color: #4b3a06;
 }
