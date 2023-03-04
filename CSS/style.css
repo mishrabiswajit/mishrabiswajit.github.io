@@ -118,14 +118,14 @@ body {
 }
 
 .logo img {
-  border-radius: 3px 23px;
+  border: 1.5px solid rgb(109, 107, 107);
+  border-radius: 50%;
   box-shadow: 3px 2px 7px grey;
   transition: all .2s ease 0s;
 }
 
 .logo img:hover {
-  border-radius: 23px 3px;
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .info {
