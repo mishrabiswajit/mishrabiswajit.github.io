@@ -10,6 +10,7 @@ body {
   margin: 20px 13px 20px 13px;
   display: flex;
   flex-direction: column;
+  cursor: url("/Images/cursor.png"),auto;
 }
 
 /* Animations Used */
