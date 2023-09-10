@@ -18,12 +18,12 @@ setTimeout(() => {
          }, 16000);
       }
       else {
-         document.getElementById("birthday").innerText = "I am " + (current.getFullYear() - 2003) + " yrs old.";
+         document.getElementById("birthday").innerText = "I am currently " + (current.getFullYear() - 2003) + " yrs old.";
       }
    }
 
    else {
-      document.getElementById("birthday").innerText = "I am " + (current.getFullYear() - 2004) + " yrs old.";
+      document.getElementById("birthday").innerText = "I am currently " + (current.getFullYear() - 2004) + " yrs old.";
    }
 }, 0);
 
