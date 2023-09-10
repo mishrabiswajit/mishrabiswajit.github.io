@@ -1,192 +1,192 @@
 /* Initializing the page */
 * {
-  background-color: #f8edcc;
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
+   background-color: #f8edcc;
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
 }
 
 body {
-  margin: 20px 13px 20px 13px;
-  display: flex;
-  flex-direction: column;
-  cursor: url("/Images/cursor.png"),auto;
+   margin: 20px 13px 20px 13px;
+   display: flex;
+   flex-direction: column;
+   cursor: url("/Images/cursor.png"), auto;
 }
 
 /* Animations Used */
 .entry_1 {
-  opacity: 0;
-  animation: entry_animation_left_to_right 1.85s .7s ease forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right 1.85s .7s ease forwards;
 }
 
 .entry_2 {
-  opacity: 0;
-  animation: entry_animation_left_to_right 1.85s 2s ease forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right 1.85s 2s ease forwards;
 }
 
 .entry_3 {
-  opacity: 0;
-  animation: entry_animation_left_to_right 1.85s 3.5s ease forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right 1.85s 3.5s ease forwards;
 }
 
 .entry_4 {
-  opacity: 0;
-  animation: entry_animation_left_to_right 1.85s 5s ease forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right 1.85s 5s ease forwards;
 }
 
 .entry_5 {
-  opacity: 0;
-  animation: entry_animation_left_to_right 1.85s 6.5s ease forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right 1.85s 6.5s ease forwards;
 }
 
 .entry_6 {
-  opacity: 0;
-  animation: entry_animation_left_to_right 1.85s 7.5s ease forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right 1.85s 7.5s ease forwards;
 }
 
 .entry_7 {
-  opacity: 0;
-  animation: entry_animation_left_to_right 1.85s 9s ease forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right 1.85s 9s ease forwards;
 }
 
 .entry_8 {
-  opacity: 0;
-  animation: entry_animation_left_to_right 1.85s 10.5s ease forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right 1.85s 10.5s ease forwards;
 }
 
 .entry_9 {
-  opacity: 0;
-  animation: entry_animation_left_to_right_logo .5s 11.7s ease-in forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right_logo .5s 11.7s ease-in forwards;
 }
 
 .entry_10 {
-  opacity: 0;
-  animation: entry_animation_left_to_right_logo .5s 12s ease-in forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right_logo .5s 12s ease-in forwards;
 }
 
 .entry_11 {
-  opacity: 0;
-  animation: entry_animation_left_to_right_logo .5s 12.5s ease-in forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right_logo .5s 12.5s ease-in forwards;
 }
 
 .entry_12 {
-  opacity: 0;
-  animation: entry_animation_left_to_right_logo .5s 13s ease-in forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right_logo .5s 13s ease-in forwards;
 }
 
 .entry_13 {
-  opacity: 0;
-  animation: entry_animation_left_to_right_logo .5s 13.5s ease-in forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right_logo .5s 13.5s ease-in forwards;
 }
 
 .entry_14 {
-  opacity: 0;
-  animation: entry_animation_left_to_right_logo .5s 14s ease-in forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right_logo .5s 14s ease-in forwards;
 }
 
 .entry_15 {
-  opacity: 0;
-  animation: entry_animation_left_to_right_logo .5s 14.5s ease-in forwards;
+   opacity: 0;
+   animation: entry_animation_left_to_right_logo .5s 14.5s ease-in forwards;
 }
 
 @keyframes entry_animation_left_to_right {
-  0% {
-    opacity: 0;
-    transform: translateX(-50%);
-  }
+   0% {
+      opacity: 0;
+      transform: translateX(-50%);
+   }
 
-  100% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
+   100% {
+      opacity: 1;
+      transform: translateX(0%);
+   }
 }
 
 @keyframes entry_animation_left_to_right_logo {
-  0% {
-    opacity: 0;
-    transform: scale(-40%) translateX(-50%);
-  }
+   0% {
+      opacity: 0;
+      transform: scale(-40%) translateX(-50%);
+   }
 
-  100% {
-    opacity: 1;
-    transform: translateX(0%);
-  }
+   100% {
+      opacity: 1;
+      transform: translateX(0%);
+   }
 }
 
 /* Content Styling  */
 .logo {
-  padding: 35px 0px 25px 0px;
+   padding: 35px 0px 25px 0px;
 }
 
 .logo img {
-  border: 1.5px solid rgb(109, 107, 107);
-  border-radius: 50%;
-  box-shadow: 3px 2px 7px grey;
-  transition: all .2s ease 0s;
+   border: 1.5px solid rgb(109, 107, 107);
+   border-radius: 50%;
+   box-shadow: 3px 2px 7px grey;
+   transition: all .2s ease 0s;
 }
 
 .logo img:hover {
-  transform: scale(1.05);
+   transform: scale(1.05);
 }
 
 .info {
-  font-size: 1.05rem;
-  font-family: 'Satoshi', sans-serif;
+   font-size: 1.05rem;
+   font-family: 'Satoshi', sans-serif;
 }
 
 .info p {
-  margin: 10px 0px 10px 0px;
-  padding: 5px;
+   margin: 10px 0px 10px 0px;
+   padding: 5px;
 }
 
 .socials {
-  margin-top: 10px;
+   margin-top: 10px;
 }
 
 .socials a img {
-  width: 35px;
-  margin: 12px 9px 5px 9px;
-  transition: all .3s ease 0s;
-  border-radius: 45%;
-  box-shadow: 2.5px 2.5px 10px grey;
+   width: 35px;
+   margin: 12px 9px 5px 9px;
+   transition: all .3s ease 0s;
+   border-radius: 45%;
+   box-shadow: 2.5px 2.5px 10px grey;
 }
 
 .socials a img:hover {
-  transform: scale(1.2);
+   transform: scale(1.2);
 }
 
 /* Usefull Classes */
 .flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .primary-heading {
-  font-family: 'Satoshi', sans-serif;
-  font-size: x-large;
-  font-size: 1.35rem;
+   font-family: 'Satoshi', sans-serif;
+   font-size: x-large;
+   font-size: 1.35rem;
 }
 
 .secondary-heading {
-  font-family: 'Satoshi', sans-serif;
-  font-size: 1.15rem;
-  font-weight: 300;
-  padding: 10px 0px 10px 0px;
+   font-family: 'Satoshi', sans-serif;
+   font-size: 1.15rem;
+   font-weight: 300;
+   padding: 10px 0px 10px 0px;
 }
 
 .underline {
-  text-decoration: underline dotted;
+   text-decoration: underline dotted;
 }
 
 .center {
-  text-align: center;
+   text-align: center;
 }
 
 .grey {
-  color: rgb(109, 107, 107);
+   color: rgb(109, 107, 107);
 }
 
 .cream {
-  color: #4b3a06;
+   color: #4b3a06;
 }
