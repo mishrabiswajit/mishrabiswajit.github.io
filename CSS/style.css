@@ -1,95 +1,33 @@
-/* Initializing the page */
+/* Global Styles */
 * {
    background-color: #f8edcc;
-   margin: 0px;
-   padding: 0px;
+   margin: 0;
+   padding: 0;
    text-decoration: none;
+   font-family: 'Satoshi', sans-serif;
 }
 
+/* Body Styling */
 body {
-   margin: 20px 13px 20px 13px;
+   margin: 20px 13px;
    display: flex;
    flex-direction: column;
    cursor: url("/Images/cursor.png"), auto;
 }
 
-/* Animations Used */
-.entry_1 {
+/* Animations */
+.fade-in-left {
    opacity: 0;
-   animation: entry_animation_left_to_right 1.85s .7s ease forwards;
+   animation: fadeInLeft 1.85s ease forwards;
 }
 
-.entry_2 {
+.fade-in-scale {
    opacity: 0;
-   animation: entry_animation_left_to_right 1.85s 1s ease forwards;
+   animation: fadeInScale .5s ease-in forwards;
 }
 
-.entry_3 {
-   opacity: 0;
-   animation: entry_animation_left_to_right 1.85s 1.5s ease forwards;
-}
-
-.entry_4 {
-   opacity: 0;
-   animation: entry_animation_left_to_right 1.85s 2s ease forwards;
-}
-
-.entry_5 {
-   opacity: 0;
-   animation: entry_animation_left_to_right 1.85s 2.5s ease forwards;
-}
-
-.entry_6 {
-   opacity: 0;
-   animation: entry_animation_left_to_right 1.85s 3.5s ease forwards;
-}
-
-.entry_7 {
-   opacity: 0;
-   animation: entry_animation_left_to_right 1.85s 4s ease forwards;
-}
-
-.entry_8 {
-   opacity: 0;
-   animation: entry_animation_left_to_right 1.85s 4.5s ease forwards;
-}
-
-.entry_9 {
-   opacity: 0;
-   animation: entry_animation_left_to_right_logo .5s 5.5s ease-in forwards;
-}
-
-.entry_10 {
-   opacity: 0;
-   animation: entry_animation_left_to_right_logo .5s 6s ease-in forwards;
-}
-
-.entry_11 {
-   opacity: 0;
-   animation: entry_animation_left_to_right_logo .5s 6.5s ease-in forwards;
-}
-
-.entry_12 {
-   opacity: 0;
-   animation: entry_animation_left_to_right_logo .5s 7s ease-in forwards;
-}
-
-.entry_13 {
-   opacity: 0;
-   animation: entry_animation_left_to_right_logo .5s 6.5s ease-in forwards;
-}
-
-.entry_14 {
-   opacity: 0;
-   animation: entry_animation_left_to_right_logo .5s 6s ease-in forwards;
-}
-
-.entry_15 {
-   opacity: 0;
-   animation: entry_animation_left_to_right_logo .5s 5.5s ease-in forwards;
-}
-
-@keyframes entry_animation_left_to_right {
+/* Keyframes */
+@keyframes fadeInLeft {
    0% {
       opacity: 0;
       transform: translateX(-50%);
@@ -101,10 +39,10 @@ body {
    }
 }
 
-@keyframes entry_animation_left_to_right_logo {
+@keyframes fadeInScale {
    0% {
       opacity: 0;
-      transform: scale(-40%) translateX(-50%);
+      transform: scale(0.2) translateX(-50%);
    }
 
    100% {
@@ -113,49 +51,58 @@ body {
    }
 }
 
-/* Content Styling  */
+/* Logo Styling */
 .logo {
-   padding: 35px 0px 25px 0px;
+   padding: 35px 0 25px 0;
 }
 
 .logo img {
    border: 1.5px solid rgb(109, 107, 107);
    border-radius: 50%;
    box-shadow: 3px 2px 7px grey;
-   transition: all .2s ease 0s;
+   transition: transform .2s ease;
 }
 
 .logo img:hover {
    transform: scale(1.05);
 }
 
+/* Info Section */
 .info {
    font-size: 1.05rem;
-   font-family: 'Satoshi', sans-serif;
+   text-align: center;
 }
 
 .info p {
-   margin: 10px 0px 10px 0px;
+   margin: 10px 0;
    padding: 5px;
 }
 
+/* Social Media Icons */
 .socials {
    margin-top: 10px;
 }
 
-.socials a img {
+.socials img {
    width: 35px;
    margin: 12px 9px 5px 9px;
-   transition: all .3s ease 0s;
+   transition: transform .3s ease;
    border-radius: 45%;
    box-shadow: 2px 2px 4px rgb(88, 88, 88);
 }
 
-.socials a img:hover {
+.socials img:hover {
    transform: scale(1.15);
 }
 
-/* Usefull Classes */
+.social-link {
+   display: inline-block;
+   opacity: 0;
+   animation: fadeInScale .5s ease-in forwards;
+   animation-delay: calc(4.7s + .5s * var(--i));
+}
+
+/* Reusable Utility Classes */
 .flex-center {
    display: flex;
    justify-content: center;
@@ -163,16 +110,13 @@ body {
 }
 
 .primary-heading {
-   font-family: 'Satoshi', sans-serif;
-   font-size: x-large;
    font-size: 1.35rem;
 }
 
 .secondary-heading {
-   font-family: 'Satoshi', sans-serif;
    font-size: 1.15rem;
    font-weight: 300;
-   padding: 10px 0px 10px 0px;
+   padding: 10px 0;
 }
 
 .underline {
