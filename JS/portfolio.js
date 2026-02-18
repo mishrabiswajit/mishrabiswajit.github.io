@@ -1,32 +1,45 @@
-// Initialize the current date
+// Get current date
 var current = new Date();
 
-// Check if today is September 2nd (month index 8 for September in JavaScript)
-if (current.getDate() === 2 && current.getMonth() === 8) {
-   // Display birthday message
-   document.getElementById("birthday").innerText = `I'm Biswajit Mishra! Today’s my birthday, and I turned ${current.getFullYear() - 2003} years old today.`;
+// Your birth details (2 September 2003)
+// Month index 8 = September (JS months start from 0)
+var birthYear = 2003;
+var birthMonth = 8;
+var birthDate = 2;
 
-   // Wish Function: Prompt user to wish after 8 seconds
+// Basic age calculation
+var age = current.getFullYear() - birthYear;
+
+// Check if birthday has already happened this year
+if (
+   current.getMonth() < birthMonth || (current.getMonth() === birthMonth && current.getDate() < birthDate)
+) {
+   age--; // If birthday not yet occurred, reduce age by 1
+}
+
+// Check if today is your birthday
+if (current.getDate() === birthDate && current.getMonth() === birthMonth) {
+
+   document.getElementById("birthday").innerText =
+      `I'm Biswajit Mishra! Today’s my birthday, and I turned ${age} years old today.`;
+
+   // Ask for wish after 8 seconds
    setTimeout(function () {
       var wish = confirm("Wanna Wish me?");
       if (wish) {
-         // Redirect to Telegram if the user wishes
          window.location.href = "https://t.me/mishrabiswajit";
       } else {
-         // Show a sad message if the user declines to wish
          alert("You made me cry 😭😭");
       }
-   }, 8000); // 8000 milliseconds = 8 seconds
+   }, 8000);
+
 } else {
-   // Display general message if not birthday or for the rest of the year
-   if (current.getDate() >= 2 && current.getMonth() >= 8) {
-      // Between September 2nd and end of the year
-      document.getElementById("birthday").innerText = `I'm Biswajit Mishra, ${current.getFullYear() - 2003}-year-old tech enthusiast.`;
-   } else {
-      // Outside September and October or before September 2nd
-      document.getElementById("birthday").innerText = `I'm Biswajit Mishra, ${current.getFullYear() - 2004}-year-old tech enthusiast.`;
-   }
+
+   // Normal message for rest of the year
+   document.getElementById("birthday").innerText =
+      `I'm Biswajit Mishra, ${age}-year-old tech enthusiast.`;
 }
+
 
 // Clock Function
 setInterval(() => {
