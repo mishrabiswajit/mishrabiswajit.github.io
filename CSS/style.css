@@ -134,3 +134,86 @@ body {
 .cream {
    color: #4b3a06;
 }
+
+/* Tools Page Top Bar */
+.tools-topbar {
+   display: grid;
+   grid-template-columns: 1fr auto 1fr;
+   align-items: center;
+   border: 1.5px solid rgb(109, 107, 107);
+   border-radius: 8px;
+   padding: 18px 22px;
+   margin-bottom: 55px;
+}
+
+.back-btn {
+   grid-column: 1;
+   justify-self: start;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 60px;
+   height: 42px;
+   border: 1.8px solid rgb(109, 107, 107);
+   border-radius: 14px;
+   transition: transform .2s ease, background-color .2s ease;
+}
+
+.back-btn svg {
+   width: 24px;
+   height: 24px;
+   color: #4b3a06;
+}
+
+.back-btn:hover {
+   transform: scale(1.08);
+   background-color: rgba(75, 58, 6, 0.07);
+}
+
+.topbar-title {
+   grid-column: 2;
+   font-size: 1.35rem;
+   color: #4b3a06;
+   text-align: center;
+}
+
+/* Tools Grid */
+.tools-grid-wrap {
+   padding: 0 15px;
+}
+
+.tools-grid {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 26px;
+   max-width: 960px;
+   margin: 0 auto;
+}
+
+.tool-card {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 230px;
+   height: 120px;
+   padding: 0 20px;
+   background-color: #3e5c76;
+   border-radius: 20px;
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.18);
+   text-align: center;
+   transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.tool-card span {
+   background-color: transparent;
+   color: #faf3df;
+   font-size: 1.1rem;
+   font-weight: 700;
+}
+
+.tool-card:hover {
+   transform: scale(1.05);
+   box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.25);
+}
